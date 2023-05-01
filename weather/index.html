@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Title</title>
+</head>
+<body>
+    <div class="card">
+        <form id="weather-form">
+        <input type="text" id="cityname" name="cityname" placeholder="Enter city name" required>
+        <button style="border: none;"> <img class = "search" src="images/search.png"></button>
+        </form>
+        <div class="container d-none">
+            <h2 id="forecast">[forecast]</h2>
+            <div class="weather-metrics">
+              <div class="metric">
+                <span class="title">Temperature:</span>
+                <span id="temp">[temp]</span>
+              </div>
+              <div class="metric">
+                <span class="title">High:</span>
+                <span id="high">[high]</span>
+              </div>
+              <div class="metric">
+                <span class="title">Low:</span>
+                <span id="low">[low]</span>
+              </div>
+              <div class="metric">
+                <span class="title">Humidity:</span>
+                <span id="humidity">[humidity]</span>
+              </div>
+            </div>
+            <div class="weather-icon">
+                <img class="weather-icon-img" src="" alt="weather icon">
+              </div>
+              
+        </div>
+    <script src="main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
